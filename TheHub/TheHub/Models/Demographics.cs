@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity;
 
 namespace TheHub.Models
 {
@@ -11,5 +12,10 @@ namespace TheHub.Models
 
         public DateTime BirthDate { get; set; }
         public string Gender { get; set; }
+    }
+
+    public class DemographicsDbContext : DbContext
+    {
+        public DbSet<Demographics> Demographics { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity;
 
 namespace TheHub.Models
 {
@@ -11,5 +12,9 @@ namespace TheHub.Models
         public DateTime DateAdded { get; set; }
         public bool ProfilePic { get; set; }
 
+    }
+    public class PhotosDbContext : DbContext
+    {
+        public DbSet<Photos> Photos { get; set; }
     }
 }

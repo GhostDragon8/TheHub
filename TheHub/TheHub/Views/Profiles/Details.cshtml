@@ -1,0 +1,82 @@
+﻿@model TheHub.Models.Profile
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Profile</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Interest.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Interest.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member.HeroName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member.HeroName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MemID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MemID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DemID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DemID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Demographics)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Demographics)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhotoID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhotoID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Photos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Photos)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProfID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
